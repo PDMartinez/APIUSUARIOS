@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "9a390380-fe1a-4667-862c-59e5f24454be",
+		"name": "API USUARIOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET USUARIOS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjExIiwiZW1haWwiOiJkYW5pbG9AZ21haWwuY29tIiwiaWF0IjoxNjY1MDEzMjE4fQ.UVtG9G_-LMFg-5q2GBWBMahOlxWzJZQBsavrbpB0vbQ",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"id\": \"1\",\r\n    \"email\": \"danilo@gmail.com\",\r\n    \"name\": \"Danilo\",\r\n    \"lastname\": \"Martinez\",\r\n    \"phone\": \"0972905218\",\r\n    \"password\": \"321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://compumarkapp.com/api/users/getAll",
+					"protocol": "https",
+					"host": [
+						"compumarkapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET USUARIOS POR ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjExIiwiZW1haWwiOiJkYW5pbG9AZ21haWwuY29tIiwiaWF0IjoxNjY1MDEzMjE4fQ.UVtG9G_-LMFg-5q2GBWBMahOlxWzJZQBsavrbpB0vbQ",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"id\": \"1\",\r\n    \"email\": \"danilo@gmail.com\",\r\n    \"name\": \"Danilo\",\r\n    \"lastname\": \"Martinez\",\r\n    \"phone\": \"0972905218\",\r\n    \"password\": \"321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://compumarkapp.com/api/users/getAll/1",
+					"protocol": "https",
+					"host": [
+						"compumarkapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"getAll",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST USUARIOS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjExIiwiZW1haWwiOiJkYW5pbG9AZ21haWwuY29tIiwiaWF0IjoxNjY1MDEzMjE4fQ.UVtG9G_-LMFg-5q2GBWBMahOlxWzJZQBsavrbpB0vbQ",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"id\": \"2\",\r\n    \"email\": \"pedro@gmail.com\",\r\n    \"name\": \"Pedro\",\r\n    \"lastname\": \"Martinez\",\r\n    \"phone\": \"0972905218\",\r\n    \"password\": \"321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://compumarkapp.com/api/users/create",
+					"protocol": "https",
+					"host": [
+						"compumarkapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT USUARIOS",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjExIiwiZW1haWwiOiJkYW5pbG9AZ21haWwuY29tIiwiaWF0IjoxNjY1MDEzMjE4fQ.UVtG9G_-LMFg-5q2GBWBMahOlxWzJZQBsavrbpB0vbQ",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"id\": \"2\",\r\n    \"email\": \"pedro@gmail.com\",\r\n    \"name\": \"Pedro1\",\r\n    \"lastname\": \"Martinez\",\r\n    \"phone\": \"0972905218\",\r\n    \"password\": \"321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://compumarkapp.com/api/users/update",
+					"protocol": "https",
+					"host": [
+						"compumarkapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USUARIOS",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjExIiwiZW1haWwiOiJkYW5pbG9AZ21haWwuY29tIiwiaWF0IjoxNjY1MDEzMjE4fQ.UVtG9G_-LMFg-5q2GBWBMahOlxWzJZQBsavrbpB0vbQ",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"id\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://compumarkapp.com/api/users/delete",
+					"protocol": "https",
+					"host": [
+						"compumarkapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
