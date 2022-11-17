@@ -1,0 +1,12 @@
+===========================
+INDICACIONES DE USO
+===========================
+*Esta API está desarrollada con Node.js en una arquitectura MVC.
+*El código fuente de la API está contenido en el archivo zip llamado BackendUsuarios.zip
+*El mismo código fuente ya está alojado en un servidor web, por lo que las pruebas desde POSTMAN mediante las colecciones se podrán realizar sin necesidad de instalar Node.js en el ordenador.
+*La base de datos utilizada para este ejemplo fue PostgreSql, utilizando una tabla llamada usuarios.
+------------------------------------------------------
+*En caso de precisar la instalación de Node.js tener en cuenta que la versión en la que se creó este proyecto fue la v16.17.1
+*Una vez instalado se debe ejecutar desde la consola NPM INSTALL, para instalar todas las dependencias ubicando en la raiz del proyecto, Ej: D:\BackEnd\BackendUsuarios>NPM INSTALL
+
+
